@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="tvt" default="build" basedir=".">
+
+    <property file="build.properties"/>
+    <property name="build.dir" value="${basedir}/build"/>
+    <property name="build.jar.dir" value="${build.dir}/jar"/>
+    <property name="build.jar.name" value="Team_of_4.jar"/>
+    <property name="build.classes.dir" value="${build.dir}/classes"/>
+    <property name="src.dir" value="${basedir}/src"/>
+    <property name="lib.dir" value="${basedir}/lib"/>
+    <property name="conf.dir" value="${basedir}/etc"/>
+
+    <!-- Definitions of classpath variants used for different tasks -->
+
+    <path id="compile.classpath">
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="test.classpath">
+        <pathelement location="${build.classes.dir}"/>
+        <!-- configuration -->
+        <pathelement location="${conf.dir}"/>
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <!-- Clean up build system results -->
+    <target name="clean" description="Clean up build system results">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="build" description="Build the system">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.classes.dir}"/>
+        <javac
+                srcdir="${src.dir}"
+                destdir="${build.classes.dir}"
+                debug="true"
+                debuglevel="lines,vars,source"
+                encoding="utf-8"
+                compiler="modern"
+                target="1.7"
+                source="1.7"
+                includeantruntime="false">
+            <classpath refid="compile.classpath"/>
+        </javac>
+
+    </target>
+
+    <!-- Definitions of runnable ant targets.
+         Run them from the command line by executing "ant [targetname]"  -->
+
+    <target name="run" depends="build" description="Run the template application">
+        <java classname="ee.ut.math.tvt.Team_of_4.Intro" classpathref="test.classpath" fork="yes" />
+    </target>
+
+    <target name="dist" depends="build" description="Make jar file">
+        <propertyfile file="version.properties">
+            <entry key="build.revision.number" type="int" default="0" operation="+" />
+        </propertyfile>
+        <property file="version.properties" />
+        <propertyfile file="version.properties">
+            <entry key="build.number" value="${build.major.number}.${build.minor.number}.${build.revision.number}" />
+        </propertyfile>
+
+        <mkdir dir="${build.jar.dir}" />
+        <!-- coping -->
+        <copy todir="${build.jar.dir}">
+            <fileset dir="." includes="lib/*.jar" />
+            <fileset file="${basedir}/application.properties" />
+            <fileset file="${basedir}/version.properties" />
+        </copy>
+        <jar destfile="${build.jar.dir}/${build.jar.name}">
+            <fileset dir="${build.classes.dir}" />
+            <manifest>
+                <attribute name="Main-Class" value="ee.ut.math.tvt.Team_of_4.Intro" />
+                <attribute name="Class-Path" value=". lib/log4j-1.2.17.jar" />
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="jrun" depends="dist">
+        <java jar="${build.jar.dir}/${build.jar.name}" fork="true"/>
+    </target>
+
+</project>
