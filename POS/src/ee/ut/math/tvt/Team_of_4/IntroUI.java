@@ -42,7 +42,7 @@ public class IntroUI {
         JLabel jLabel1 = new JLabel("Team Leader: " + applicationProp.getProperty("Team_leader"));
         JLabel jLabel2 = new JLabel("Team Leader Mail: " + applicationProp.getProperty("Team_leader_mail"));
         JLabel jLabel3 = new JLabel("Team Members: " + applicationProp.getProperty("Team_members"));
-        ImageIcon logo = new ImageIcon("/Users/iljasmirnov/Desktop/TVT/team_of_4.png");
+        ImageIcon logo = new ImageIcon("res/team_of_4.png");
         logo = new ImageIcon(logo.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH));
 
         JLabel jLabel4 = new JLabel(logo, JLabel.RIGHT);

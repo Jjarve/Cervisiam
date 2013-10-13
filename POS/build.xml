@@ -72,6 +72,7 @@
             <fileset dir="." includes="lib/*.jar" />
             <fileset file="${basedir}/application.properties" />
             <fileset file="${basedir}/version.properties" />
+            <fileset file="${basedir}/res/*" />
         </copy>
         <jar destfile="${build.jar.dir}/${build.jar.name}">
             <fileset dir="${build.classes.dir}" />
