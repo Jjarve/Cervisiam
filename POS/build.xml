@@ -73,6 +73,7 @@
             <fileset file="${basedir}/application.properties" />
             <fileset file="${basedir}/version.properties" />
             <fileset file="${basedir}/res/*" />
+        	<fileset file="${basedir}/log4j.properties" />
         </copy>
         <jar destfile="${build.jar.dir}/${build.jar.name}">
             <fileset dir="${build.classes.dir}" />

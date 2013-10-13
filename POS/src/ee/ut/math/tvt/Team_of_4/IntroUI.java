@@ -1,8 +1,10 @@
 package ee.ut.math.tvt.Team_of_4;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,6 +19,7 @@ public class IntroUI {
 
     public IntroUI() {
         try {
+        	PropertyConfigurator.configure("log4j.properties");
             applicationProp.load(new FileInputStream("application.properties"));
             versionProp.load(new FileInputStream("version.properties"));
         } catch (IOException e) {
