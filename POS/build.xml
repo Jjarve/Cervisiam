@@ -102,5 +102,13 @@
         <jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=1044" />
     </java>
 
+    <target name="git_commit">
+
+
+    </target>
+
+    <target name="git_tag" depends="" description="GitHub Tag">
+
+    </target>
 
 </project>
