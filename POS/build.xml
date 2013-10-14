@@ -93,6 +93,35 @@
             <arg value="console" />
         </java>
     </target>
-
-
+	
+	<property name="parent.dir" location=".." />
+	
+	<macrodef name="git">
+			<attribute name="command" />
+			<element name="args" optional="true" />
+			<sequential>
+				<echo message="git @{command}" />
+				<exec executable="git" dir="${parent.dir}">
+					<arg value="@{command}" />
+					<args/>
+				</exec>
+			</sequential>
+		</macrodef>
+	 
+		<target name="git_commit" description="Commits all changes to version git">
+			<input message="Commit message:" addproperty="commit-message" />
+			
+			<echo message="Commiting all changes with message ${commit-message}" />
+			<git command="add">
+				<args>
+					<arg value="-A" />
+				</args>
+			</git>
+			<git command="commit">
+				<args>
+					<arg value="-m ${commit-message}" />
+				</args>
+			</git>
+			<git command="push" />
+		</target>
 </project>
