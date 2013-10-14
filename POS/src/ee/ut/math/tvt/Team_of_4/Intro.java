@@ -6,7 +6,7 @@ import java.io.File;
 public class Intro {
     public static void main(String[] args) {
         IntroUI iu = new IntroUI();
-        iu.launch();
+        iu.launch(); //test2
         System.out.println("asdas");
         
     }
