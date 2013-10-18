@@ -120,7 +120,7 @@
 					<arg value="-m ${commit-message}" />
 				</args>
 			</git>
-			<git command="push" failonerror="true">
+			<git command="push">
 				<args>
 					<arg value="-v" />
 					<arg value="origin" />
