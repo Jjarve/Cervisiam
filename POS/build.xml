@@ -107,7 +107,7 @@
 			</sequential>
 		</macrodef>
 	 
-		<target name="git_commit" description="Commits all changes to version git">
+		<target name="git_commit" depends="clean" description="Commits all changes to version git">
 			<input message="Commit message:" addproperty="commit-message" />
 			
 			<echo message="Commiting all changes with message ${commit-message}" />
