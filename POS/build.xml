@@ -105,9 +105,7 @@
 					<args/>
 				</exec>
 			</sequential>
-		<attribute default="false" name="failonerror"/>
-		</macrodef>
-	 
+	</macrodef>	 
 		<target name="git_commit" depends="clean" description="Commits all changes to version git">
 			<input message="Commit message:" addproperty="commit-message" />
 			
