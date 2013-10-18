@@ -123,6 +123,8 @@
 			<git command="push" failonerror="true">
 				<args>
 					<arg value="-v" />
+					<arg value="origin" />
+					<arg value="master" />
 				</args>
 			</git>
 		</target>
