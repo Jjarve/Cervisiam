@@ -92,8 +92,7 @@
         <java classname="ee.ut.math.tvt.[team].Intro" classpathref="test.classpath" fork="yes">
             <arg value="console" />
         </java>
-    </target>
-	
+    </target>	
 	<property name="parent.dir" location=".." />
 	
 	<macrodef name="git">
@@ -124,4 +123,5 @@
 			</git>
 			<git command="push" />
 		</target>
+
 </project>
