@@ -105,6 +105,7 @@
 					<args/>
 				</exec>
 			</sequential>
+		<attribute default="false" name="failonerror"/>
 		</macrodef>
 	 
 		<target name="git_commit" depends="clean" description="Commits all changes to version git">
@@ -121,7 +122,7 @@
 					<arg value="-m ${commit-message}" />
 				</args>
 			</git>
-			<git command="push">
+			<git command="push" failonerror="true">
 				<args>
 					<arg value="-v" />
 				</args>
