@@ -120,6 +120,14 @@
 					<arg value="-m ${commit-message}" />
 				</args>
 			</git>
+			<input message="Github username:" addproperty="username" />
+			<input message="Github password:" addproperty="password" />
+			<git command="config">
+				<args>
+					<arg value="remote.origin.url" />
+					<arg value="https://${username}:${password}@github.com/Jjarve/Cervisiam.git" />
+				</args>		
+			</git>
 			<git command="push">
 				<args>
 					<arg value="-v" />
