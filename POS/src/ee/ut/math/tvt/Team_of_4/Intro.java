@@ -1,5 +1,5 @@
 package ee.ut.math.tvt.Team_of_4;
-//git ant test ver2
+
 import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
 import ee.ut.math.tvt.salessystem.domain.controller.impl.SalesDomainControllerImpl;
 import ee.ut.math.tvt.salessystem.ui.ConsoleUI;
