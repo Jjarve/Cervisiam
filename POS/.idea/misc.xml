@@ -43,6 +43,9 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="IdProvider" IDEtalkID="485A556E21BE10D93AE923A127ADFA2A" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
