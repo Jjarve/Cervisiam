@@ -1,140 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="tvt" default="build" basedir=".">
 
-    <property file="build.properties"/>
-    <property name="build.dir" value="${basedir}/build"/>
-    <property name="build.jar.dir" value="${build.dir}/jar"/>
-    <property name="build.jar.name" value="Team_of_4.jar"/>
-    <property name="build.classes.dir" value="${build.dir}/classes"/>
-    <property name="src.dir" value="${basedir}/src"/>
-    <property name="lib.dir" value="${basedir}/lib"/>
-    <property name="conf.dir" value="${basedir}/etc"/>
+	<property file="build.properties" />
+	<property name="build.dir" value="${basedir}/build" />
+	<property name="build.jar.dir" value="${build.dir}/jar" />
+	<property name="build.jar.name" value="Team_of_4.jar" />
+	<property name="build.classes.dir" value="${build.dir}/classes" />
+	<property name="src.dir" value="${basedir}/src" />
+	<property name="lib.dir" value="${basedir}/lib" />
+	<property name="conf.dir" value="${basedir}/etc" />
 
-    <!-- Definitions of classpath variants used for different tasks -->
+	<!-- Definitions of classpath variants used for different tasks -->
 
-    <path id="compile.classpath">
-        <fileset dir="lib">
-            <include name="*.jar"/>
-        </fileset>
-    </path>
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
 
-    <path id="test.classpath">
-        <pathelement location="${build.classes.dir}"/>
-        <!-- configuration -->
-        <pathelement location="${conf.dir}"/>
-        <fileset dir="lib">
-            <include name="*.jar"/>
-        </fileset>
-    </path>
+	<path id="test.classpath">
+		<pathelement location="${build.classes.dir}" />
+		<!-- configuration -->
+		<pathelement location="${conf.dir}" />
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
 
-    <!-- Clean up build system results -->
-    <target name="clean" description="Clean up build system results">
-        <delete dir="${build.dir}"/>
-    </target>
+	<!-- Clean up build system results -->
+	<target name="clean" description="Clean up build system results">
+		<delete dir="${build.dir}" />
+	</target>
 
-    <target name="build" description="Build the system">
-        <mkdir dir="${build.dir}"/>
-        <mkdir dir="${build.classes.dir}"/>
-        <javac
-                srcdir="${src.dir}"
-                destdir="${build.classes.dir}"
-                debug="true"
-                debuglevel="lines,vars,source"
-                encoding="utf-8"
-                compiler="modern"
-                target="1.7"
-                source="1.7"
-                includeantruntime="false">
-            <classpath refid="compile.classpath"/>
-        </javac>
+	<target name="build" description="Build the system">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${build.classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${build.classes.dir}" debug="true" debuglevel="lines,vars,source" encoding="utf-8" compiler="modern" target="1.7" source="1.7" includeantruntime="false">
+			<classpath refid="compile.classpath" />
+		</javac>
 
-    </target>
+	</target>
 
-    <!-- Definitions of runnable ant targets.
+	<!-- Definitions of runnable ant targets.
          Run them from the command line by executing "ant [targetname]"  -->
 
-    <target name="run" depends="build" description="Run the template application">
-        <java classname="ee.ut.math.tvt.Team_of_4.Intro" classpathref="test.classpath" fork="yes" />
-    </target>
+	<target name="run" depends="build" description="Run the template application">
+		<java classname="ee.ut.math.tvt.Team_of_4.Intro" classpathref="test.classpath" fork="yes" />
+	</target>
 
-    <target name="dist" depends="build" description="Make jar file">
-        <propertyfile file="version.properties">
-            <entry key="build.revision.number" type="int" default="0" operation="+" />
-        </propertyfile>
-        <property file="version.properties" />
-        <propertyfile file="version.properties">
-            <entry key="build.number" value="${build.major.number}.${build.minor.number}.${build.revision.number}" />
-        </propertyfile>
+	<target name="dist" depends="build" description="Make jar file">
+		<propertyfile file="version.properties">
+			<entry key="build.revision.number" type="int" default="0" operation="+" />
+		</propertyfile>
+		<property file="version.properties" />
+		<propertyfile file="version.properties">
+			<entry key="build.number" value="${build.major.number}.${build.minor.number}.${build.revision.number}" />
+		</propertyfile>
 
-        <mkdir dir="${build.jar.dir}" />
-        <!-- coping -->
-        <copy todir="${build.jar.dir}">
-            <fileset dir="." includes="lib/*.jar" />
-            <fileset file="${basedir}/application.properties" />
-            <fileset file="${basedir}/version.properties" />
-            <fileset file="${basedir}/res/*" />
-        	<fileset file="${basedir}/log4j.properties" />
-        </copy>
-        <jar destfile="${build.jar.dir}/${build.jar.name}">
-            <fileset dir="${build.classes.dir}" />
-            <manifest>
-                <attribute name="Main-Class" value="ee.ut.math.tvt.Team_of_4.Intro" />
-                <attribute name="Class-Path" value=". lib/log4j-1.2.17.jar" />
-            </manifest>
-        </jar>
-    </target>
+		<mkdir dir="${build.jar.dir}" />
+		<!-- coping -->
+		<copy todir="${build.jar.dir}">
+			<fileset dir="." includes="lib/*.jar" />
+			<fileset file="${basedir}/application.properties" />
+			<fileset file="${basedir}/version.properties" />
+			<fileset file="${basedir}/res/*" />
+			<fileset file="${basedir}/log4j.properties" />
+		</copy>
+		<jar destfile="${build.jar.dir}/${build.jar.name}">
+			<fileset dir="${build.classes.dir}" />
+			<manifest>
+				<attribute name="Main-Class" value="ee.ut.math.tvt.Team_of_4.Intro" />
+				<attribute name="Class-Path" value=". lib/log4j-1.2.17.jar" />
+			</manifest>
+		</jar>
+	</target>
 
-    <target name="jrun" depends="dist">
-        <java jar="${build.jar.dir}/${build.jar.name}" fork="true"/>
-    </target>
+	<target name="jrun" depends="dist">
+		<java jar="${build.jar.dir}/${build.jar.name}" fork="true" />
+	</target>
 
-    <target name="runc" depends="build" description="Run the application (console)">
-        <java classname="ee.ut.math.tvt.[team].Intro" classpathref="test.classpath" fork="yes">
-            <arg value="console" />
-        </java>
-    </target>	
+	<target name="runc" depends="build" description="Run the application (console)">
+		<java classname="ee.ut.math.tvt.[team].Intro" classpathref="test.classpath" fork="yes">
+			<arg value="console" />
+		</java>
+	</target>
 	<property name="parent.dir" location=".." />
-	
+
 	<macrodef name="git">
-			<attribute name="command" />
-			<element name="args" optional="true" />
-			<sequential>
-				<echo message="git @{command}" />
-				<exec executable="git" dir="${parent.dir}">
-					<arg value="@{command}" />
-					<args/>
-				</exec>
-			</sequential>
-	</macrodef>	 
-		<target name="git_commit" depends="clean" description="Commits all changes to version git">
-			<input message="Commit message:" addproperty="commit-message" />
-			
-			<echo message="Commiting all changes with message ${commit-message}" />
-			<git command="add">
-				<args>
-					<arg value="-A" />
-				</args>
-			</git>
-			<git command="commit">
-				<args>
-					<arg value="-m ${commit-message}" />
-				</args>
-			</git>
-			<input message="Github username:" addproperty="username" />
-			<input message="Github password:" addproperty="password" />
-			<git command="config">
-				<args>
-					<arg value="remote.origin.url" />
-					<arg value="https://${username}:${password}@github.com/Jjarve/Cervisiam.git" />
-				</args>		
-			</git>
-			<git command="push">
-				<args>
-					<arg value="-v" />
-					<arg value="origin" />
-					<arg value="master" />
-				</args>
-			</git>
-		</target>
+		<attribute name="command" />
+		<element name="args" optional="true" />
+		<sequential>
+			<echo message="git @{command}" />
+			<exec executable="git" dir="${parent.dir}">
+				<arg value="@{command}" />
+				<args />
+			</exec>
+		</sequential>
+	</macrodef>
+	<target name="git_setup" description="Sets up git for ant use">
+		<input message="Github username:" addproperty="username" />
+		<input message="Github password:" addproperty="password" />
+		<git command="config">
+			<args>
+				<arg value="remote.origin.url" />
+				<arg value="https://${username}:${password}@github.com/Jjarve/Cervisiam.git" />
+			</args>
+		</git>
+		<git command="config">
+			<args>
+				<arg value="push.default"/>
+				<arg value="simple"/>
+			</args>
+		</git>
+	</target>
+	<target name="git_commit" depends="clean" description="Commits all changes to version git">
+		<input message="Commit message:" addproperty="commit-message" />
+		<echo message="Commiting all changes with message ${commit-message}" />
+		<git command="add">
+			<args>
+				<arg value="-A" />
+			</args>
+		</git>
+		<git command="commit">
+			<args>
+				<arg value="-m ${commit-message}" />
+			</args>
+		</git>
+		<git command="push">
+			<args>
+				<arg value="-v" />
+				<arg value="origin" />
+				<arg value="master" />
+			</args>
+		</git>
+	</target>
+	<target name="git_tag" depends="clean" description="tags with homework number and pushes all with tags">
+		<input message="Homework number:" addproperty="hw-nr" />
+		<echo message="Adding tag Homework ${hw-nr}" />
+		<git command="tag">
+			<args>
+				<arg value="-a" />
+				<arg value="homework_${hw-nr}" />
+				<arg value="-m" />
+				<arg value='"Homework ${hw-nr}"' />
+			</args>
+		</git>
+		<git command="push">
+			<args>
+				<arg value="--tags" />
+				<arg value="origin" />
+				<arg value="master" />
+			</args>
+		</git>
+	</target>
 
 </project>
