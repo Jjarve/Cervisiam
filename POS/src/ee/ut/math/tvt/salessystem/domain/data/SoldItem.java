@@ -25,6 +25,8 @@ public class SoldItem implements Cloneable, DisplayableItem {
     public SoldItem(Long id, StockItem stockItem, Integer quantity) {
         this.id = id;
         this.stockItem = stockItem;
+        this.name = stockItem.getName();
+        this.price = stockItem.getPrice();
         this.quantity = quantity;
     }
 

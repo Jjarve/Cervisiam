@@ -204,15 +204,15 @@ public class PurchaseItemPanel extends JPanel {
         StockItem stockItem = getStockItemByBarcode();
         if (stockItem != null) {
             int quantity;
-            long ID;
+            long ID = 0;
             try {
                 quantity = Integer.parseInt(quantityField.getText());
-                
+                ID = Long.parseLong(barCodeField.getText());
             } catch (NumberFormatException ex) {
                 quantity = 1;
             }
             model.getCurrentPurchaseTableModel()
-                    .addItem(new SoldItem(stockItem, quantity));
+                    .addItem(new SoldItem(ID ,stockItem, quantity));
         }
     }
 
