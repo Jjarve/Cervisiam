@@ -66,26 +66,21 @@ public class PurchaseItemPanel extends JPanel {
     // purchase dialog
     private JComponent drawDialogPane() {
 
-        //Sixten testib
-        int i = model.getWarehouseTableModel().getRowCount();
-        Object[] e = new String[i];
-        for(int j=1;j<=i;j++){
-            e[j-1] = model.getWarehouseTableModel().getItemById(j).getColumn(1);
-        }
-
         // Create the panel
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(6, 2));
         panel.setBorder(BorderFactory.createTitledBorder("Product"));
 
         // Initialize the textfields
-        productField = new JComboBox<Object>(e);
+        productField = new JComboBox<Object>(makeListOfStockNames());
         barCodeField = new JTextField();
         quantityField = new JTextField("1");
         nameField = new JTextField();
         priceField = new JTextField();
 
 //getSelectedItem()
+        
+
 
         // Fill the dialog fields if the bar code text field loses focus
         productField.addItemListener(new ItemListener() {
@@ -146,6 +141,15 @@ public class PurchaseItemPanel extends JPanel {
 
         return panel;
     }
+    public Object[] makeListOfStockNames(){
+        int i = model.getWarehouseTableModel().getRowCount();
+        Object[] e = new String[i];
+        for(int j=1;j<=i;j++){
+            e[j-1] = model.getWarehouseTableModel().getItemById(j).getColumn(1);
+        }
+        return e;
+    }
+
 
     // Fill dialog with data from the "database".
     public void fillDialogFields() {
@@ -220,7 +224,7 @@ public class PurchaseItemPanel extends JPanel {
      * Sets whether or not this component is enabled.
      */
     @Override
-    public void setEnabled(boolean enabled) {
+    public void setEnabled(boolean enabled) {    	
         this.productField.setEnabled(enabled);
         this.addItemButton.setEnabled(enabled);
         this.barCodeField.setEnabled(enabled);
