@@ -1,10 +1,9 @@
 package ee.ut.math.tvt.salessystem.ui.model;
 
-import java.util.NoSuchElementException;
-
+import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import org.apache.log4j.Logger;
 
-import ee.ut.math.tvt.salessystem.domain.data.StockItem;
+import java.util.NoSuchElementException;
 
 /**
  * Stock item table model.

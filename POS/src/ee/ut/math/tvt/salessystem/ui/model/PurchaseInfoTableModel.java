@@ -1,9 +1,7 @@
 package ee.ut.math.tvt.salessystem.ui.model;
 
-import org.apache.log4j.Logger;
-
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
-import ee.ut.math.tvt.salessystem.ui.SalesSystemUI;
+import org.apache.log4j.Logger;
 
 /**
  * Purchase history details model.

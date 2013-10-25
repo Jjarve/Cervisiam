@@ -1,12 +1,11 @@
 package ee.ut.math.tvt.salessystem.ui.model;
 
+import ee.ut.math.tvt.salessystem.domain.data.DisplayableItem;
+
+import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
-
-import javax.swing.table.AbstractTableModel;
-
-import ee.ut.math.tvt.salessystem.domain.data.DisplayableItem;
 
 /**
  * Generic table model implementation suitable for extending.
@@ -72,6 +71,4 @@ public abstract class SalesSystemTableModel<T extends DisplayableItem> extends
         rows.clear();
         rows.addAll(data);
     }
-    
-    
 }

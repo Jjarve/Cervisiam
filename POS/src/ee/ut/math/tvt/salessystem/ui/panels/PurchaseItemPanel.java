@@ -3,10 +3,8 @@ package ee.ut.math.tvt.salessystem.ui.panels;
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
-import ee.ut.math.tvt.salessystem.ui.model.SalesSystemTableModel;
 
 import javax.swing.*;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.util.NoSuchElementException;
@@ -148,7 +146,7 @@ public class PurchaseItemPanel extends JPanel {
     public Object[] makeListOfStockNames(){
         int i = model.getWarehouseTableModel().getRowCount();
         Object[] e = new String[i];
-        for(int j=1;j<=i;j++){
+        for(int j=1;j <= i; j++){
             e[j-1] = model.getWarehouseTableModel().getItemById(j).getColumn(1);
         }
         return e;
@@ -210,7 +208,12 @@ public class PurchaseItemPanel extends JPanel {
     public void addItemEventHandler() {
         // add chosen item to the shopping cart.
         StockItem stockItem = getStockItemByBarcode();
-        if (stockItem != null) {
+
+        if (stockItem != null && stockItem.getQuantity() < Integer.parseInt(quantityField.getText())){
+            JOptionPane.showMessageDialog(null, "Not enough items in the Warehouse");
+        }
+
+        else if (stockItem != null) {
             int quantity;
             long ID = 0;
             try {

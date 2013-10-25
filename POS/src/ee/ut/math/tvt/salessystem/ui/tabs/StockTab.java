@@ -151,14 +151,12 @@ public class StockTab implements ActionListener, MouseListener {
     }
 
     public void actionPerformed(ActionEvent e){
-
         if (e.getActionCommand().equals("Add")){
             String ID = newID.getText();
             String Name = newName.getText();
             String Description = newDescription.getText();
             String Price = newPrice.getText();
             String Quantity = newQuantity.getText();
-
 
 
             if (isLong(ID) && isDouble(Price) && isInteger(Quantity) && !Name.equals("")){
