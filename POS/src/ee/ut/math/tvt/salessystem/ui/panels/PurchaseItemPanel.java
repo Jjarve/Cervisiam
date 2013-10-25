@@ -77,6 +77,7 @@ public class PurchaseItemPanel extends JPanel {
         quantityField = new JTextField("1");
         nameField = new JTextField();
         priceField = new JTextField();
+        
 
 //getSelectedItem()
         
@@ -224,7 +225,10 @@ public class PurchaseItemPanel extends JPanel {
      * Sets whether or not this component is enabled.
      */
     @Override
-    public void setEnabled(boolean enabled) {    	
+    public void setEnabled(boolean enabled) {  
+    	int j = (int)findBarCode(productField.getSelectedItem());
+        barCodeField.setText(Integer.toString(j));
+        fillDialogFields();
         this.productField.setEnabled(enabled);
         this.addItemButton.setEnabled(enabled);
         this.barCodeField.setEnabled(enabled);
