@@ -3,8 +3,10 @@ package ee.ut.math.tvt.salessystem.ui.panels;
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
+import ee.ut.math.tvt.salessystem.ui.model.SalesSystemTableModel;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.NoSuchElementException;
@@ -72,6 +74,7 @@ public class PurchaseItemPanel extends JPanel {
         panel.setBorder(BorderFactory.createTitledBorder("Product"));
 
         // Initialize the textfields
+        //print()
         productField = new JComboBox<Object>(makeListOfStockNames());
         barCodeField = new JTextField();
         quantityField = new JTextField("1");
@@ -226,9 +229,11 @@ public class PurchaseItemPanel extends JPanel {
      */
     @Override
     public void setEnabled(boolean enabled) {  
-    	int j = (int)findBarCode(productField.getSelectedItem());
-        barCodeField.setText(Integer.toString(j));
-        fillDialogFields();
+    	if(enabled == true){
+	    	int j = (int)findBarCode(productField.getSelectedItem());
+	        barCodeField.setText(Integer.toString(j));
+	        fillDialogFields();
+    	}
         this.productField.setEnabled(enabled);
         this.addItemButton.setEnabled(enabled);
         this.barCodeField.setEnabled(enabled);
