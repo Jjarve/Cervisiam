@@ -123,13 +123,21 @@ public class StockTab implements ActionListener, MouseListener {
         return panel;
     }
 
+
     public static boolean isInteger(String s) {
         try {
             Integer.parseInt(s);
             return true;
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             return false;
         }
+    }
+
+    public static boolean isString(String s) {
+        if (s instanceof String) {
+            return true;
+        }
+        return false;
     }
 
     public static boolean isDouble(String s) {
@@ -141,17 +149,17 @@ public class StockTab implements ActionListener, MouseListener {
         }
     }
 
-    public  static boolean isLong(String s){
+    public static boolean isLong(String s) {
         try {
             Long.parseLong(s);
             return true;
-        } catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             return false;
         }
     }
 
-    public void actionPerformed(ActionEvent e){
-        if (e.getActionCommand().equals("Add")){
+    public void actionPerformed(ActionEvent e) {
+        if (e.getActionCommand().equals("Add")) {
             String ID = newID.getText();
             String Name = newName.getText();
             String Description = newDescription.getText();
@@ -159,12 +167,12 @@ public class StockTab implements ActionListener, MouseListener {
             String Quantity = newQuantity.getText();
 
 
-            if (isLong(ID) && isDouble(Price) && isInteger(Quantity) && !Name.equals("")){
+            if (isLong(ID) && isDouble(Price) && isInteger(Quantity) && !Name.equals("")) {
 
-                model.getWarehouseTableModel().addItem(new StockItem(Long.parseLong(ID), Name, Description ,Double.parseDouble(Price), Integer.parseInt(Quantity)));
+                model.getWarehouseTableModel().addItem(new StockItem(Long.parseLong(ID), Name, Description, Double.parseDouble(Price), Integer.parseInt(Quantity)));
 
             } else {
-                JOptionPane.showMessageDialog(null, "Check please insert", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Please check insert", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
         }
@@ -179,15 +187,15 @@ public class StockTab implements ActionListener, MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        if (e.getSource().equals(newID)){
+        if (e.getSource().equals(newID)) {
             newID.setText("");
-        } else if (e.getSource().equals(newName)){
+        } else if (e.getSource().equals(newName)) {
             newName.setText("");
-        } else if (e.getSource().equals(newDescription)){
+        } else if (e.getSource().equals(newDescription)) {
             newDescription.setText("");
-        } else if (e.getSource().equals(newPrice)){
+        } else if (e.getSource().equals(newPrice)) {
             newPrice.setText("");
-        } else if (e.getSource().equals(newQuantity)){
+        } else if (e.getSource().equals(newQuantity)) {
             newQuantity.setText("");
         }
     }

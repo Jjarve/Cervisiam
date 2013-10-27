@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="POS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382701705882" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382870439583" ignored="false" />
     <file path="/Intro.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381751896787" ignored="false" />
     <file path="/IntroUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381752826973" ignored="false" />
     <file path="/build.xml" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382096573422" ignored="false" />
-    <file path="/StockTab.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382701625012" ignored="false" />
+    <file path="/StockTab.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382818249214" ignored="false" />
     <file path="/fragment.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382181512385" ignored="false" />
     <file path="/PurchaseItemPanel.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382703154824" ignored="false" />
     <file path="/SoldItem.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382357044662" ignored="false" />
@@ -23,6 +22,10 @@
     <file path="/SalesSystemTableModel.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382701456794" ignored="false" />
     <file path="/StockItem.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382702126881" ignored="false" />
     <file path="/PurchaseInfoTableModel.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382702632783" ignored="false" />
+    <file path="/PurchaseTab.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382872156305" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Projects/Cannibals/src/Main.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382866562262" ignored="false" />
+    <file path="/HistoryTab.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382870341264" ignored="false" />
+    <file path="/Order.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382872109284" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,40 +85,40 @@
     <favorites_list name="POS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48995695">
+    <splitter split-orientation="horizontal" split-proportion="0.47699532">
       <split-first>
         <leaf>
-          <file leaf-file-name="PurchaseInfoTableModel.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="66" column="5" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SalesDomainControllerImpl.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/controller/impl/SalesDomainControllerImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="13" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PurchaseItemPanel.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="PurchaseItemPanel.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="215" column="13" selection-start="6388" selection-end="6388" vertical-scroll-proportion="0.41666666">
+                <state line="215" column="13" selection-start="6388" selection-end="6388" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="StockTab.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java">
+          <file leaf-file-name="PurchaseTab.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="150" column="5" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.0">
+                <state line="290" column="14" selection-start="9027" selection-end="9027" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DisplayableItem.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/DisplayableItem.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HistoryTab.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="24" selection-start="402" selection-end="402" vertical-scroll-proportion="0.26422763">
                   <folding />
                 </state>
               </provider>
@@ -128,16 +131,7 @@
           <file leaf-file-name="StockTableModel.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="61" selection-start="496" selection-end="496" vertical-scroll-proportion="-0.35714287">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SalesSystemTableModel.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="72" column="5" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
+                <state line="16" column="52" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -198,11 +192,14 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SoldItem.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java" />
-        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/StockItem.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java" />
-        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" />
+        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" />
+        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java" />
+        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java" />
+        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/Order.java" />
+        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" />
       </list>
     </option>
   </component>
@@ -534,10 +531,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,118 +556,6 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Application.Intro">
     <configuration default="false" name="Intro" type="Application" factoryName="Application" temporary="true">
@@ -882,7 +767,11 @@
       <created>1382357297651</created>
       <updated>1382357297651</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Prohibit adding the product to the shopping cart once the warehouse has no more items">
+      <created>1382703235789</created>
+      <updated>1382703235789</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -892,6 +781,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6745636" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -907,12 +797,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.7082294" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29177058" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2892768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -958,7 +847,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add to cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prohibit adding the product to the shopping cart once the warehouse has no more items" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -975,6 +864,7 @@
     <MESSAGE value="Test" />
     <MESSAGE value="New" />
     <MESSAGE value="Add to cart" />
+    <MESSAGE value="Prohibit adding the product to the shopping cart once the warehouse has no more items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -997,46 +887,35 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/exception/VerificationFailedException.java">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="130" selection-end="130" vertical-scroll-proportion="0.14677104">
+        <state line="65" column="14" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/SalesSystemUI.java">
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="759" selection-end="759" vertical-scroll-proportion="-1.4617225">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/ConsoleUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="55" selection-start="3232" selection-end="3232" vertical-scroll-proportion="0.6163522">
+        <state line="72" column="5" selection-start="1883" selection-end="1883" vertical-scroll-proportion="1.3617886">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java">
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="231" selection-end="231" vertical-scroll-proportion="0.23809524">
+        <state line="66" column="5" selection-start="1744" selection-end="1744" vertical-scroll-proportion="1.3211383">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/DisplayableItem.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/javax/swing/AbstractButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.1083815">
-          <folding />
-        </state>
+        <state line="2017" column="16" selection-start="71690" selection-end="71690" vertical-scroll-proportion="0.33286715" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/controller/impl/SalesDomainControllerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/Team_of_4/IntroUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+        <state line="40" column="29" selection-start="1261" selection-end="1285" vertical-scroll-proportion="0.47619048">
           <folding />
         </state>
       </provider>
@@ -1048,37 +927,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="14" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="772" selection-end="772" vertical-scroll-proportion="0.23809524">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/StockItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="25" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="5" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="5" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1092,21 +943,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="61" selection-start="496" selection-end="496" vertical-scroll-proportion="-0.35714287">
+        <state line="16" column="52" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/DisplayableItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="5" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.0">
+        <state line="174" column="16" selection-start="5161" selection-end="5256" vertical-scroll-proportion="1.0248448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/controller/impl/SalesDomainControllerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="452" selection-end="452" vertical-scroll-proportion="0.20750988">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="13" selection-start="6388" selection-end="6388" vertical-scroll-proportion="0.41666666">
+        <state line="215" column="13" selection-start="6388" selection-end="6388" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="290" column="14" selection-start="9027" selection-end="9027" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="402" selection-end="402" vertical-scroll-proportion="0.26422763">
           <folding />
         </state>
       </provider>
