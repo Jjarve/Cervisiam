@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemModel.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="POS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382882644420" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382909278628" ignored="false" />
     <file path="/Intro.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381751896787" ignored="false" />
     <file path="/IntroUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381752826973" ignored="false" />
     <file path="/build.xml" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382096573422" ignored="false" />
     <file path="/StockTab.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382818249214" ignored="false" />
-    <file path="/fragment.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382181512385" ignored="false" />
+    <file path="/fragment.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382889675508" ignored="false" />
     <file path="/PurchaseItemPanel.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382880718678" ignored="false" />
     <file path="/SoldItem.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382357044662" ignored="false" />
     <file path="/StockTableModel.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382702165974" ignored="false" />
@@ -32,7 +27,7 @@
     <file path="/SalesSystemModel.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382882889721" ignored="false" />
     <file path="/SalesSystemUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382883198689" ignored="false" />
     <file path="/PurchaseItmes.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382882483824" ignored="false" />
-    <file path="/a.dummy" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382882664250" ignored="false" />
+    <file path="/a.dummy" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1382905321193" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +42,38 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" line="117" class="ee.ut.math.tvt.salessystem.ui.tabs.PurchaseTab$2" package="ee.ut.math.tvt.salessystem.ui.tabs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/SalesSystemUI.java" line="21" class="ee.ut.math.tvt.salessystem.ui.SalesSystemUI" package="ee.ut.math.tvt.salessystem.ui">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,9 +110,10 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" line="154" class="ee.ut.math.tvt.salessystem.ui.tabs.PurchaseTab$2$1" package="ee.ut.math.tvt.salessystem.ui.tabs">
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/Container.java" line="1490" class="java.awt.Container" package="java.awt">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -100,7 +128,8 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-    </line_breakpoints>
+    </method_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -112,26 +141,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.47699532">
       <split-first>
         <leaf>
-          <file leaf-file-name="PurchaseTab.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java">
+          <file leaf-file-name="Intro.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/Team_of_4/Intro.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="159" column="49" selection-start="5469" selection-end="5469" vertical-scroll-proportion="0.33459356">
-                  <folding>
-                    <element signature="e#3360#7768#0" expanded="true" />
-                    <element signature="e#4852#5566#0" expanded="true" />
-                    <element signature="e#5547#5548#0" expanded="true" />
-                    <element signature="e#5611#5909#0" expanded="true" />
-                    <element signature="e#5890#5891#0" expanded="true" />
-                    <element signature="e#7757#7758#0" expanded="true" />
-                  </folding>
+                <state line="24" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="StockTab.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java">
+          <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/build.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="139" column="0" selection-start="4060" selection-end="4060" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -150,10 +172,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SalesSystemModel.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="SalesSystemModel.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemModel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="0" selection-start="1235" selection-end="1235" vertical-scroll-proportion="1.1512915">
+                <state line="43" column="0" selection-start="1235" selection-end="1235" vertical-scroll-proportion="1.3179916">
                   <folding />
                 </state>
               </provider>
@@ -206,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/HistoryItem.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/Order.java" />
-        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/PurchaseItmes.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/PurchaseItems.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/HistoryTableModel.java" />
@@ -215,6 +236,7 @@
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemModel.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java" />
+        <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/panels/PurchaseItemPanel.java" />
       </list>
     </option>
   </component>
@@ -546,10 +568,10 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,6 +587,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="true" />
     <property name="last.edited.regexp" value="asldka" />
@@ -582,11 +605,11 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ee.ut.math.tvt.Team_of_4.Intro" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -608,12 +631,34 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <option name="PORT" value="1044" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -787,37 +832,61 @@
       <created>1382703235789</created>
       <updated>1382703235789</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Task 3 including all exceptions">
+      <created>1382889404485</created>
+      <updated>1382889404485</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.7107232" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67581046" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29177058" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2892768" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28678304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67206985" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23601148" sideWeight="0.67581046" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2892768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23601148" sideWeight="0.6745636" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2892768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -863,7 +932,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prohibit adding the product to the shopping cart once the warehouse has no more items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 3 including all exceptions" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -881,6 +950,7 @@
     <MESSAGE value="New" />
     <MESSAGE value="Add to cart" />
     <MESSAGE value="Prohibit adding the product to the shopping cart once the warehouse has no more items" />
+    <MESSAGE value="Task 3 including all exceptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -903,122 +973,113 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="470" column="0" selection-start="17082" selection-end="17082" vertical-scroll-proportion="0.33164558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/sun/awt/AppContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="28" selection-start="2321" selection-end="2321" vertical-scroll-proportion="0.33164558" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/sun/awt/SunToolkit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="38" selection-start="11112" selection-end="11112" vertical-scroll-proportion="0.31339714" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/Toolkit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1729" column="0" selection-start="76791" selection-end="76791" vertical-scroll-proportion="0.31339714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/sun/lwawt/LWComponentPeer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="44" selection-start="2295" selection-end="2295" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/sun/lwawt/LWWindowPeer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="27" selection-start="3365" selection-end="3365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/Insets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="0" selection-start="4774" selection-end="4774" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/ComponentOrientation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="4350" selection-end="4350" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/BorderLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="830" column="0" selection-start="29215" selection-end="29215" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1660" column="0" selection-start="63963" selection-end="63963" vertical-scroll-proportion="-4.6">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1603" column="0" selection-start="55319" selection-end="55319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1014" column="0" selection-start="36338" selection-end="36338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/Team_of_4/Intro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/StockItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1235" selection-end="1235" vertical-scroll-proportion="1.1512915">
+        <state line="43" column="0" selection-start="1235" selection-end="1235" vertical-scroll-proportion="1.3179916">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/StockTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="0" selection-start="4060" selection-end="4060" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaTextFieldUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="895" selection-end="895" vertical-scroll-proportion="0.33164558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaCaret.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaTextFieldSearch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="20" selection-start="4441" selection-end="4441" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaTextFieldBorder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.63709676">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaBorder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.38995215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaFocusHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="724" selection-end="724" vertical-scroll-proportion="0.24489796">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaMnemonicHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="976" selection-end="976" vertical-scroll-proportion="0.72789115">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaFonts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="50" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaOptionPaneUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="47" selection-start="541" selection-end="541" vertical-scroll-proportion="0.4217687">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/ClientPropertyApplicator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="751" selection-end="751" vertical-scroll-proportion="0.38995215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaRootPaneUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/apple/laf/AquaButtonUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="20" selection-start="4845" selection-end="4845" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/PurchaseTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="49" selection-start="5469" selection-end="5469" vertical-scroll-proportion="0.33459356">
-          <folding>
-            <element signature="e#3360#7768#0" expanded="true" />
-            <element signature="e#4852#5566#0" expanded="true" />
-            <element signature="e#5547#5548#0" expanded="true" />
-            <element signature="e#5611#5909#0" expanded="true" />
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#7757#7758#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
