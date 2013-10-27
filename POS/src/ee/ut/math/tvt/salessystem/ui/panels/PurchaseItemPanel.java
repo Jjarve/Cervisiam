@@ -82,13 +82,7 @@ public class PurchaseItemPanel extends JPanel {
         quantityField = new JTextField("1");
         nameField = new JTextField();
         priceField = new JTextField();
-<<<<<<< HEAD
-=======
 
-
-//getSelectedItem()
-
->>>>>>> 9490dae748591c11dbcfe50af819b5e8c68724f7
 
 
         // Fill the dialog fields if the bar code text field loses focus
