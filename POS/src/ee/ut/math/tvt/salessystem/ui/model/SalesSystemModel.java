@@ -1,8 +1,7 @@
 package ee.ut.math.tvt.salessystem.ui.model;
 
-import org.apache.log4j.Logger;
-
 import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
+import org.apache.log4j.Logger;
 
 /**
  * Main model. Holds all the other models.
@@ -19,6 +18,8 @@ public class SalesSystemModel {
 
     private final SalesDomainController domainController;
 
+
+
     /**
      * Construct application model.
      * @param domainController Sales domain controller.
@@ -28,6 +29,7 @@ public class SalesSystemModel {
         
         warehouseTableModel = new StockTableModel();
         currentPurchaseTableModel = new PurchaseInfoTableModel();
+
 
         // populate stock model with data from the warehouse
         warehouseTableModel.populateWithData(domainController.loadWarehouseState());
@@ -41,5 +43,5 @@ public class SalesSystemModel {
     public PurchaseInfoTableModel getCurrentPurchaseTableModel() {
         return currentPurchaseTableModel;
     }
-    
+
 }

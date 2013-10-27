@@ -1,8 +1,12 @@
 package ee.ut.math.tvt.salessystem.ui.tabs;
 
 import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
+import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
+import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.domain.exception.VerificationFailedException;
+import ee.ut.math.tvt.salessystem.ui.model.PurchaseInfoTableModel;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
+import ee.ut.math.tvt.salessystem.ui.model.StockTableModel;
 import ee.ut.math.tvt.salessystem.ui.panels.PurchaseItemPanel;
 import org.apache.log4j.Logger;
 
@@ -10,7 +14,10 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * Encapsulates everything that has to do with the purchase tab (the tab
@@ -31,6 +38,8 @@ public class PurchaseTab {
     private PurchaseItemPanel purchasePane;
 
     private SalesSystemModel model;
+
+
 
 
     public PurchaseTab(SalesDomainController controller,
@@ -138,13 +147,20 @@ public class PurchaseTab {
                 JButton accept = new JButton("Accept");
                 JButton cancel = new JButton("Cancel");
 
+
                 accept.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (e.getActionCommand().equals("Accept")) {
-                            JOptionPane.showMessageDialog(null, "Order accepted");
-                            jFrame.dispose();
+                            if (Double.valueOf(backMoney.getText()) < 0.0) {
+                                JOptionPane.showMessageDialog(null, "Please check insert", "Error", JOptionPane.ERROR_MESSAGE);
+                            } else {
+                                JOptionPane.showMessageDialog(null, "Order accepted");
+                                quantityDecrease();
+                                jFrame.dispose();
+                            }
                         }
+
                     }
                 });
 
@@ -161,11 +177,8 @@ public class PurchaseTab {
                     @Override
                     public void insertUpdate(DocumentEvent e) {
                         double back = Double.parseDouble(enterSum.getText()) - getTotalPrice();
-                        if (!(StockTab.isDouble(enterSum.getText()) && StockTab.isInteger(enterSum.getText()))) {
-                            JOptionPane.showMessageDialog(null, "Please check insert", "Error", JOptionPane.ERROR_MESSAGE);
-                        } else {
-                            backMoney.setText(String.valueOf(back));
-                        }
+                        backMoney.setText(String.valueOf(back));
+
                     }
 
                     @Override
@@ -179,6 +192,18 @@ public class PurchaseTab {
                     }
                 });
 
+                enterSum.addKeyListener(new KeyAdapter() {
+                    @Override
+                    public void keyTyped(KeyEvent e) {
+                        char ch = e.getKeyChar();
+
+                        if(Character.isLetter(ch)){
+                            JOptionPane.showMessageDialog(null, "Please check insert", "Error", JOptionPane.ERROR_MESSAGE);
+                        }
+
+                    }
+
+                });
 
 
                 top.add(jLabel);
@@ -237,10 +262,21 @@ public class PurchaseTab {
         int count = 0;
 
         while (model.getCurrentPurchaseTableModel().getRowCount() > count){
-            total = total + Double.parseDouble(String.valueOf(model.getCurrentPurchaseTableModel().getValueAt(count, 4)));
+            total += Double.parseDouble(String.valueOf(model.getCurrentPurchaseTableModel().getValueAt(count, 4)));
             count++;
         }
         return total;
+    }
+
+    private void quantityDecrease() {
+        PurchaseInfoTableModel purchaseInfoTableModel = model.getCurrentPurchaseTableModel();
+        StockTableModel stockTableModel = model.getWarehouseTableModel();
+
+        for (SoldItem solditem: purchaseInfoTableModel.getTableRows()) {
+            StockItem stockitem = stockTableModel.getItemById(solditem.getId());
+            int oldQuantity = stockitem.getQuantity();
+            stockitem.setQuantity(oldQuantity - solditem.getQuantity());
+        }
     }
 
 

@@ -133,12 +133,6 @@ public class StockTab implements ActionListener, MouseListener {
         }
     }
 
-    public static boolean isString(String s) {
-        if (s instanceof String) {
-            return true;
-        }
-        return false;
-    }
 
     public static boolean isDouble(String s) {
         try {
