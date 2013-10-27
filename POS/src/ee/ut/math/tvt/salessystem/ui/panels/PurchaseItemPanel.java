@@ -3,8 +3,10 @@ package ee.ut.math.tvt.salessystem.ui.panels;
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
+import ee.ut.math.tvt.salessystem.ui.model.StockTableModel;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.NoSuchElementException;
@@ -72,16 +74,11 @@ public class PurchaseItemPanel extends JPanel {
         panel.setBorder(BorderFactory.createTitledBorder("Product"));
 
         // Initialize the textfields
-        //print()
-        productField = new JComboBox<Object>(makeListOfStockNames());
+        productField = new JComboBox<Object>();
         barCodeField = new JTextField();
         quantityField = new JTextField("1");
         nameField = new JTextField();
         priceField = new JTextField();
-        
-
-//getSelectedItem()
-        
 
 
         // Fill the dialog fields if the bar code text field loses focus
@@ -143,11 +140,17 @@ public class PurchaseItemPanel extends JPanel {
 
         return panel;
     }
+    
+    /**
+     * make a list of StockItems
+     * @return list of all StockItems' names
+     */
     public Object[] makeListOfStockNames(){
         int i = model.getWarehouseTableModel().getRowCount();
-        Object[] e = new String[i];
-        for(int j=1;j <= i; j++){
-            e[j-1] = model.getWarehouseTableModel().getItemById(j).getColumn(1);
+        long[] l = getListOfStockItemIds();
+        Object[] e = new Object[i];
+        for(int j=0;j < i; j++){
+            e[j] = model.getWarehouseTableModel().getItemById(l[j]).getColumn(1);
         }
         return e;
     }
@@ -180,28 +183,25 @@ public class PurchaseItemPanel extends JPanel {
         }
     }
 
-
+    /**
+     * finds bar code of the StockItem thats name is given
+     * @param name name of the StockItem
+     * @return StockItem's id
+     */
     private long findBarCode(Object name) {
-        int i = model.getWarehouseTableModel().getRowCount();
-        Object[] e = new String[i];
-        long[] k = new long[i];
-        long vastus = 0;
-        for(int j=1;j<=i;j++){
-            e[j-1] = model.getWarehouseTableModel().getItemById(j).getColumn(1);
+        //int i = model.getWarehouseTableModel().getRowCount();
+        long[] l = getListOfStockItemIds();
+        
+        for(int i=0;i<l.length;i++){
+        	Object curName = model.getWarehouseTableModel().getItemById(l[i]).getColumn(1);
+        	if(curName == name) {
+        		return l[i];
+        	}
         }
-
-        for(int j=1;j<=i;j++){
-            k[j-1] = Long.valueOf(String.valueOf(model.getWarehouseTableModel().getItemById(j).getColumn(0)));
-        }
-
-        for(int j=0; j<i; j++){
-            if (e[j] == name) {
-                vastus = k[j];
-            }
-        }
-        return vastus;
-
+        return 0;
     }
+
+
     /**
      * Add new item to the cart.
      */
@@ -233,14 +233,40 @@ public class PurchaseItemPanel extends JPanel {
     @Override
     public void setEnabled(boolean enabled) {  
     	if(enabled == true){
+        	fillProductField();
 	    	int j = (int)findBarCode(productField.getSelectedItem());
 	        barCodeField.setText(Integer.toString(j));
 	        fillDialogFields();
+    	} else {
+    		productField.removeAllItems();
     	}
         this.productField.setEnabled(enabled);
         this.addItemButton.setEnabled(enabled);
         this.barCodeField.setEnabled(enabled);
         this.quantityField.setEnabled(enabled);
+    }
+    
+    /**
+     * fills the productField with all currently available StockItem names
+     */
+    public void fillProductField(){
+    	for(Object i:makeListOfStockNames()){
+    		productField.addItem(i);
+    	}
+    }
+    
+    /**
+     * @return list of StockItem Id's in warehouse
+     */
+    public long[] getListOfStockItemIds(){
+    	StockTableModel sTable= model.getWarehouseTableModel();
+    	long[] sItemList = new long[sTable.getRowCount()];
+    	int n = 0;
+    	for(StockItem sItem:sTable.getTableRows()){
+    		sItemList[n] = sItem.getId();
+    		n++;
+    	}
+    	return sItemList;
     }
 
     /**
