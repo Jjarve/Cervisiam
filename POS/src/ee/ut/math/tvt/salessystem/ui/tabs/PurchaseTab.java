@@ -4,15 +4,18 @@ import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.domain.exception.VerificationFailedException;
+import ee.ut.math.tvt.salessystem.ui.model.HistoryTableModel;
 import ee.ut.math.tvt.salessystem.ui.model.PurchaseInfoTableModel;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
 import ee.ut.math.tvt.salessystem.ui.model.StockTableModel;
 import ee.ut.math.tvt.salessystem.ui.panels.PurchaseItemPanel;
+
 import org.apache.log4j.Logger;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -157,7 +160,9 @@ public class PurchaseTab {
                             } else {
                                 JOptionPane.showMessageDialog(null, "Order accepted");
                                 quantityDecrease();
+                                savePurchase();
                                 jFrame.dispose();
+                                
                             }
                         }
 
@@ -176,7 +181,7 @@ public class PurchaseTab {
                 enterSum.getDocument().addDocumentListener(new DocumentListener() {
                     @Override
                     public void insertUpdate(DocumentEvent e) {
-                        double back = Double.parseDouble(enterSum.getText()) - getTotalPrice();
+                        double back =Math.round((Double.parseDouble(enterSum.getText()) - getTotalPrice())*100.0)/ 100.0;
                         backMoney.setText(String.valueOf(back));
 
                     }
@@ -255,7 +260,7 @@ public class PurchaseTab {
     }
 
 
-
+    
 
     private double getTotalPrice(){
         double total = 0;
@@ -278,7 +283,14 @@ public class PurchaseTab {
             stockitem.setQuantity(oldQuantity - solditem.getQuantity());
         }
     }
-
+    private void savePurchase(){
+    	PurchaseInfoTableModel purchase = model.getCurrentPurchaseTableModel();
+    	HistoryTableModel historyTableModel = model.getHistoryTableModel();
+    	
+    	historyTableModel.addSale(purchase, getTotalPrice());
+    	
+    	
+    }
 
 
   /* === Event handlers for the menu buttons
