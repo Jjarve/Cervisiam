@@ -30,6 +30,9 @@ public class PurchaseItemPanel extends JPanel {
     // Warehouse model
     private SalesSystemModel model;
 
+    private double currentSum = 0.0;
+
+
     /**
      * Constructs new purchase item panel.
      *
@@ -79,6 +82,13 @@ public class PurchaseItemPanel extends JPanel {
         quantityField = new JTextField("1");
         nameField = new JTextField();
         priceField = new JTextField();
+<<<<<<< HEAD
+=======
+
+
+//getSelectedItem()
+
+>>>>>>> 9490dae748591c11dbcfe50af819b5e8c68724f7
 
 
         // Fill the dialog fields if the bar code text field loses focus
@@ -231,7 +241,7 @@ public class PurchaseItemPanel extends JPanel {
      * Sets whether or not this component is enabled.
      */
     @Override
-    public void setEnabled(boolean enabled) {  
+    public void setEnabled(boolean enabled) {
     	if(enabled == true){
         	fillProductField();
 	    	int j = (int)findBarCode(productField.getSelectedItem());
@@ -284,7 +294,7 @@ public class PurchaseItemPanel extends JPanel {
      * possible. If you work on the behavior of the application, you don't want
      * the layout details to get on your way all the time, and vice versa. This
      * separation leads to cleaner, more readable and better maintainable code.
-     * 
+     *
      * In a Swing application, the layout is also defined as Java code and this
      * separation is more difficult to make. One thing that can still be done is
      * moving the layout-defining code out into separate methods, leaving the
@@ -326,6 +336,14 @@ public class PurchaseItemPanel extends JPanel {
         gc.weighty = 1.0;
 
         return gc;
+    }
+
+    public double getCurrentSum() {
+        return currentSum;
+    }
+
+    public void setCurrentSum(double currentSum) {
+        this.currentSum = currentSum;
     }
 
 }
