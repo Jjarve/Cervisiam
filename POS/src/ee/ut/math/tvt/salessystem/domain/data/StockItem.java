@@ -3,16 +3,23 @@ package ee.ut.math.tvt.salessystem.domain.data;
 /**
  * Stock item. Corresponds to the Data Transfer Object design pattern.
  */
+
+
 public class StockItem implements Cloneable, DisplayableItem {
-	
+
+
     private Long id;
+
 
     private String name;
 
+
     private double price;
 
+
     private String description;
-    
+
+
     private int quantity;
 
     /**

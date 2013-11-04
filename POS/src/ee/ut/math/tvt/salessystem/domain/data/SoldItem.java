@@ -1,17 +1,25 @@
 package ee.ut.math.tvt.salessystem.domain.data;
 
 
-
 /**
  * Already bought StockItem. SoldItem duplicates name and price for preserving history. 
  */
+
 public class SoldItem implements Cloneable, DisplayableItem {
 
+
     private Long id;
+
+
     private StockItem stockItem;
-    
+
+
     private String name;
+
+
     private Integer quantity;
+
+
     private double price;
     
     public SoldItem(StockItem stockItem, int quantity) {

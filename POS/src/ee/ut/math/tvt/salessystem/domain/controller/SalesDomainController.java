@@ -1,10 +1,10 @@
 package ee.ut.math.tvt.salessystem.domain.controller;
 
-import java.util.List;
-
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.domain.exception.VerificationFailedException;
+
+import java.util.List;
 
 /**
  * Sales domain controller is responsible for the domain specific business
@@ -45,5 +45,6 @@ public interface SalesDomainController {
     public void submitCurrentPurchase(List<SoldItem> goods)
             throws VerificationFailedException;
 
-    
+
+    public void endSession();
 }
