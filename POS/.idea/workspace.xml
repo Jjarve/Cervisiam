@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/POSdb.lck" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hsqldb.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xercesImpl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xml-apis.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/util/HibernateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/POSdb.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/POSdb.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/POSdb.script" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/hibernate.cfg.xml" />
+    <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="All">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/ee/ut/math/tvt/salessystem/util/HibernateUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/ehcache-core-2.4.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/hibernate-commons-annotations-4.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/hibernate-core-4.1.7.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/hibernate-ehcache-4.1.7.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/javassist-3.15.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/jboss-logging-3.1.0.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate/slf4j-api-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hibernate_4_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hsqldb.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/xercesImpl.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/xml_apis.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <list id="af3d8c79-6fa2-4dfb-9e23-109b7d82f517" name="New changelist" comment="New changelist" />
     <ignored path="POS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383912414374" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383912760076" ignored="false" />
     <file path="/Intro.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383566322489" ignored="false" />
     <file path="/IntroUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381752826973" ignored="false" />
     <file path="/build.xml" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383601436722" ignored="false" />
@@ -635,36 +643,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ut" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -882,6 +860,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="" />
+      <changelist id="af3d8c79-6fa2-4dfb-9e23-109b7d82f517" name="New changelist" comment="" />
       <created>1381751857897</created>
       <updated>1381751857897</updated>
     </task>
@@ -961,7 +940,11 @@
       <created>1383912416750</created>
       <updated>1383912416750</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="All">
+      <created>1383912512156</created>
+      <updated>1383912512156</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -988,7 +971,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1007,7 +990,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.67581046" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.67581046" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2892768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1142,13 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.2402746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SoldItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
@@ -1201,6 +1177,13 @@
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/ConsoleUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="28" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/StockTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.13981359">
           <folding />
         </state>
       </provider>
