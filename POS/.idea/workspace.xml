@@ -3,17 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.lck" afterPath="$PROJECT_DIR$/data/POSdb.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/ConsoleUI.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/ConsoleUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.log" afterPath="$PROJECT_DIR$/data/POSdb.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.properties" afterPath="$PROJECT_DIR$/data/POSdb.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.script" afterPath="$PROJECT_DIR$/data/POSdb.script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/SalesSystemUI.java" afterPath="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/SalesSystemUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="af3d8c79-6fa2-4dfb-9e23-109b7d82f517" name="New changelist" comment="New changelist" />
     <ignored path="POS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1384083534010" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1384102222447" ignored="false" />
     <file path="/Intro.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383566322489" ignored="false" />
     <file path="/IntroUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381752826973" ignored="false" />
     <file path="/build.xml" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383601436722" ignored="false" />
@@ -182,7 +178,7 @@
           <file leaf-file-name="POSdb.script" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/data/POSdb.script">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="137" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.37482518">
+                <state line="39" column="137" selection-start="1603" selection-end="1603" vertical-scroll-proportion="-0.016260162">
                   <folding />
                 </state>
               </provider>
@@ -201,10 +197,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="SoldItem.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="SoldItem.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SoldItem.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="0.6097561">
+                <state line="30" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -219,10 +215,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SingleSale.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="SingleSale.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SingleSale.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="5" selection-start="420" selection-end="428" vertical-scroll-proportion="0.0">
+                <state line="20" column="5" selection-start="420" selection-end="428" vertical-scroll-proportion="0.35479632">
                   <folding />
                 </state>
               </provider>
@@ -576,54 +572,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="salessystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -945,7 +893,15 @@
       <created>1383912804473</created>
       <updated>1383912804473</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="All">
+      <created>1384093531446</created>
+      <updated>1384093531446</updated>
+    </task>
+    <task id="LOCAL-00023" summary="All">
+      <created>1384102229513</created>
+      <updated>1384102229513</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -977,7 +933,7 @@
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.56234413" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.56234413" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35074627" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -991,7 +947,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.56234413" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.56234413" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2892768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1168,6 +1124,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/POSdb.script">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="137" selection-start="1603" selection-end="1603" vertical-scroll-proportion="-0.016260162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/StockItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="23" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
@@ -1175,23 +1138,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SingleSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="420" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/POSdb.script">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="137" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.37482518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SoldItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="0.6097561">
+        <state line="30" column="35" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SingleSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="420" selection-end="428" vertical-scroll-proportion="0.35479632">
           <folding />
         </state>
       </provider>
