@@ -1,6 +1,10 @@
 package ee.ut.math.tvt.salessystem.ui.model;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -13,6 +17,13 @@ public class PurchaseInfoTableModel extends SalesSystemTableModel<SoldItem> {
 	
 	public PurchaseInfoTableModel() {
 		super(new String[] { "Id", "Name", "Price", "Quantity", "Sum"});
+	}
+	public PurchaseInfoTableModel(Set<SoldItem> soldItems){
+		super(new String[] { "Id", "Name", "Price", "Quantity", "Sum"});
+		Iterator<SoldItem> iterator = soldItems.iterator();
+		while (iterator.hasNext()){
+			addItem(iterator.next());
+		}
 	}
 
 	@Override

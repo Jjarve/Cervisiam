@@ -13,18 +13,22 @@ public class SoldItem implements Cloneable, DisplayableItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    
     @ManyToOne
     @JoinColumn(name = "STOCKITEM_ID", nullable = false)
     private StockItem stockItem;
-
+    
+    @ManyToOne
+    @JoinColumn(name = "SALE_ID", nullable = false)
+    private SingleSale saleId;
+    
     @Column(name = "name")
     private String name;
 
     @Column(name = "quantity")
     private Integer quantity;
 
-    @Column(name = "price")
+    @Column(name = "itemprice")
     private double price;
     
     public SoldItem(StockItem stockItem, int quantity) {
@@ -41,6 +45,10 @@ public class SoldItem implements Cloneable, DisplayableItem {
         this.name = stockItem.getName();
         this.price = stockItem.getPrice();
         this.quantity = quantity;
+    }
+    
+    public void setSaleId(SingleSale sale){
+    	this.saleId = sale;
     }
 
     public Long getId() {

@@ -1,6 +1,7 @@
 package ee.ut.math.tvt.salessystem.ui.tabs;
 
 import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
+import ee.ut.math.tvt.salessystem.domain.data.SingleSale;
 import ee.ut.math.tvt.salessystem.domain.data.SoldItem;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.domain.exception.VerificationFailedException;
@@ -113,7 +114,7 @@ public class PurchaseTab {
         JButton b = new JButton("Confirm");
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                submitPurchaseButtonClicked();
+
                 final JFrame jFrame = new JFrame("Paying");
                 jFrame.setLocation(560, 250);
 
@@ -158,9 +159,11 @@ public class PurchaseTab {
                             if (Double.valueOf(backMoney.getText()) < 0.0) {
                                 JOptionPane.showMessageDialog(null, "Please check insert", "Error", JOptionPane.ERROR_MESSAGE);
                             } else {
+
                                 JOptionPane.showMessageDialog(null, "Order accepted");
                                 quantityDecrease();
-                                savePurchase();
+                                
+                                submitPurchaseButtonClicked(savePurchase());
                                 jFrame.dispose();
                                 
                             }
@@ -283,12 +286,12 @@ public class PurchaseTab {
             stockitem.setQuantity(oldQuantity - solditem.getQuantity());
         }
     }
-    private void savePurchase(){
+    private SingleSale savePurchase(){
     	PurchaseInfoTableModel purchase = model.getCurrentPurchaseTableModel();
     	HistoryTableModel historyTableModel = model.getHistoryTableModel();
     	
     	historyTableModel.addSale(purchase, getTotalPrice());
-    	
+    	return historyTableModel.getItemById(historyTableModel.getRowCount()-1);
     	
     }
 
@@ -330,12 +333,12 @@ public class PurchaseTab {
     /**
      * Event handler for the <code>submit purchase</code> event.
      */
-    protected void submitPurchaseButtonClicked() {
+    protected void submitPurchaseButtonClicked(SingleSale sale) {
         log.info("Sale complete");
         try {
             log.debug("Contents of the current basket:\n" + model.getCurrentPurchaseTableModel());
             domainController.submitCurrentPurchase(
-                    model.getCurrentPurchaseTableModel().getTableRows()
+                    model.getCurrentPurchaseTableModel().getTableRows(), sale
             );
             endSale();
             model.getCurrentPurchaseTableModel().clear();

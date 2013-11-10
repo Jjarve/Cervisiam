@@ -1,5 +1,7 @@
 package ee.ut.math.tvt.salessystem.domain.data;
 
+import java.util.Set;
+
 import ee.ut.math.tvt.salessystem.ui.model.PurchaseInfoTableModel;
 
 import javax.persistence.*;
@@ -18,8 +20,11 @@ public class SingleSale implements DisplayableItem {
     @Column(name = "pricesum")
     private Double sum;
 
-    @Embedded
+    @Transient
     private PurchaseInfoTableModel purchase;
+    
+    @OneToMany(mappedBy="saleId")
+    private Set<SoldItem> soldItems;
 
     public SingleSale(long id, String currentDate, double totalPrice,
                       PurchaseInfoTableModel purchase) {
@@ -28,10 +33,16 @@ public class SingleSale implements DisplayableItem {
         this.sum = totalPrice;
         this.purchase = purchase;
     }
-
-    public SingleSale() {
+    public SingleSale(long id, String currentDate, double totalPrice, 
+    		Set<SoldItem> soldItems) {
+    	this.id = id;
+    	this.date = currentDate;
+    	this.sum = totalPrice;
+    	this.purchase = new PurchaseInfoTableModel(soldItems);
     }
-
+    public SingleSale(){
+    	
+    }
     public String getDate() {
         return date;
     }
@@ -41,7 +52,7 @@ public class SingleSale implements DisplayableItem {
     }
 
     public PurchaseInfoTableModel getPurchase() {
-        return purchase;
+        return new PurchaseInfoTableModel(soldItems);
     }
 
     @Override

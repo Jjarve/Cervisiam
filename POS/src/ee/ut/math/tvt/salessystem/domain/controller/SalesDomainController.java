@@ -46,9 +46,11 @@ public interface SalesDomainController {
      *            Goods that the buyer has chosen to buy.
      * @throws VerificationFailedException
      */
-    public void submitCurrentPurchase(List<SoldItem> goods)
+    public void submitCurrentPurchase(List<SoldItem> goods, SingleSale sale)
             throws VerificationFailedException;
 
 
     public void endSession();
+
+	public void submitStockUpdate(StockItem addedItem);
 }

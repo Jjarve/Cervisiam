@@ -1,10 +1,12 @@
 package ee.ut.math.tvt.salessystem.ui.tabs;
 
+import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
 
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,8 +24,11 @@ public class StockTab implements ActionListener, MouseListener {
     private JTextField newQuantity;
 
     private SalesSystemModel model;
+    private SalesDomainController controller;
 
-    public StockTab(SalesSystemModel model) {
+    public StockTab(SalesDomainController controller,
+    		SalesSystemModel model) {
+    	this.controller = controller;
         this.model = model;
     }
 
@@ -162,9 +167,9 @@ public class StockTab implements ActionListener, MouseListener {
 
 
             if (isLong(ID) && isDouble(Price) && isInteger(Quantity) && !Name.equals("")) {
-
-                model.getWarehouseTableModel().addItem(new StockItem(Long.parseLong(ID), Name, Description, Double.parseDouble(Price), Integer.parseInt(Quantity)));
-
+            	StockItem addedItem = new StockItem(Long.parseLong(ID), Name, Description, Double.parseDouble(Price), Integer.parseInt(Quantity));
+                model.getWarehouseTableModel().addItem(addedItem);
+                controller.submitStockUpdate(addedItem);
             } else {
                 JOptionPane.showMessageDialog(null, "Please check insert", "Error", JOptionPane.ERROR_MESSAGE);
             }

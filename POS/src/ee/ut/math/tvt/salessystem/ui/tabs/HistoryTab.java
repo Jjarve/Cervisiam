@@ -7,6 +7,7 @@ import javax.swing.table.JTableHeader;
 
 import org.apache.log4j.Logger;
 
+import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 import ee.ut.math.tvt.salessystem.ui.model.PurchaseInfoTableModel;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
@@ -25,9 +26,12 @@ import java.awt.event.MouseListener;
 public class HistoryTab implements MouseListener{
 	
 	private SalesSystemModel model;
+	private SalesDomainController controller;
 	Logger log;
 
-	public HistoryTab(SalesSystemModel model) {
+	public HistoryTab(SalesDomainController controller,
+			SalesSystemModel model) {
+		this.controller = controller;
 		this.model = model;
 		log = Logger.getLogger(getClass());
 	}
