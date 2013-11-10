@@ -22,7 +22,11 @@ public class HistoryTableModel extends SalesSystemTableModel<SingleSale> {
 
     public void addSale(final PurchaseInfoTableModel purchase,
                         final double totalPrice) {
+<<<<<<< HEAD
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+=======
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:sss");
+>>>>>>> b9d4a41708915cbcc8e8819b3668808bc17290f6
         Date date = new Date();
         String currentDate = dateFormat.format(date);
         SingleSale sale = new SingleSale(this.getRowCount() + 1, currentDate,
