@@ -15,7 +15,7 @@ public class SingleSale implements DisplayableItem {
     @Column(name = "date")
     private String date;
 
-    @Transient
+    @Column(name = "pricesum")
     private Double sum;
 
     @Embedded

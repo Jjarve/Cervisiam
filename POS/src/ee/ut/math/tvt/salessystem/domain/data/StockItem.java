@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "STOCITEM")
+@Table(name = "STOCKITEM")
 public class StockItem implements Cloneable, DisplayableItem {
 
     @Id

@@ -8,7 +8,7 @@
 	<property name="build.classes.dir" value="${build.dir}/classes" />
 	<property name="src.dir" value="${basedir}/src" />
 	<property name="lib.dir" value="${basedir}/lib" />
-	<property name="conf.dir" value="${basedir}/etc" />
+	<property name="conf.dir" value="${basedir}/conf" />
 
     <property name="lib.dir" value="${basedir}/lib"/>
 
