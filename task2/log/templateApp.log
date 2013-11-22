@@ -1,0 +1,18 @@
+2013-11-22 15:13:21,407 [main] DEBUG - Strating SalesSystem with the Swing UI ..
+2013-11-22 15:13:21,618 [main] INFO - 5 items loaded from disk
+2013-11-22 15:13:21,626 [main] INFO - 1 clients loaded from disk
+2013-11-22 15:13:21,650 [main] INFO - 7 Sales loaded from disk
+2013-11-22 15:13:22,029 [main] INFO - SalesSystem started
+2013-11-22 15:13:45,483 [AWT-EventQueue-0] DEBUG - Cancelled
+2013-11-22 15:13:49,328 [AWT-EventQueue-0] INFO - New sale process started
+2013-11-22 15:13:49,328 [AWT-EventQueue-0] INFO - New purchase started
+2013-11-22 15:13:49,332 [AWT-EventQueue-0] INFO - 1 clients loaded from disk
+2013-11-22 15:13:51,083 [AWT-EventQueue-0] INFO - Client Toomas with ID=1 got selected.
+2013-11-22 15:13:55,953 [AWT-EventQueue-0] DEBUG - Added Pähklid quantity of 5
+2013-11-22 15:14:00,401 [AWT-EventQueue-0] DEBUG - Found existing item Pähklid increased quantity by 5
+2013-11-22 15:14:11,160 [AWT-EventQueue-0] INFO - Sale complete
+2013-11-22 15:14:11,160 [AWT-EventQueue-0] DEBUG - Contents of the current basket:
+Id	Name	Price	Quantity	Sum	
+null	Pähklid	10.0	10	100.0	
+
+2013-11-22 15:16:58,753 [AWT-EventQueue-0] INFO - SalesSystem closed
