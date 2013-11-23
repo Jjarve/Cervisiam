@@ -9,6 +9,11 @@
 	<property name="src.dir" value="${basedir}/src" />
 	<property name="lib.dir" value="${basedir}/lib" />
 	<property name="conf.dir" value="${basedir}/conf" />
+	
+	
+	<property name="test.dir"   value="${basedir}/test"/>
+	<property name="build.test.dir"       value="${build.dir}/test"/>
+
 
     <property name="lib.dir" value="${basedir}/lib"/>
 
@@ -21,6 +26,23 @@
 
 	<!-- Definitions of classpath variants used for different tasks -->
 
+	
+	<path id="test-classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	    <pathelement path="${build.classes.dir}/" />
+		<pathelement path="${build.test.dir}/" />
+	</path>
+	
+	<target name="init" description="Initialize">
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.classes.dir}"/>
+		<mkdir dir="${build.test.dir}"/>
+	</target>
+	
+	
+	
 	<path id="compile.classpath">
 		<fileset dir="lib">
 			<include name="*.jar" />
@@ -92,6 +114,38 @@
 		          <jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=1044" />
 		          -->
 		</java>
+	</target>
+	
+	<target name="build-tests" depends="build" description="Build the system">
+		<javac
+            srcdir="${test.dir}"
+            destdir="${build.test.dir}"
+            debug="true"
+            debuglevel="lines,vars,source"
+            encoding="utf-8"
+            compiler="modern"
+            target="1.5"
+            source="1.5"
+        	classpathref="libs"
+        >
+			<classpath>
+				<pathelement path="${build.classes.dir}" />
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="test" depends="build-tests" description="Run the template application">
+
+		<junit>
+			<classpath refid="test-classpath" />
+
+			<formatter type="brief" usefile="false" />
+			<batchtest>
+				<fileset dir="${build.test.dir}" includes="**/*.class" />
+			</batchtest>
+		</junit>
+
+
 	</target>
 
     <target name="dist" depends="build" description="Make jar file">
