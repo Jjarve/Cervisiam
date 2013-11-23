@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 
+private StockItem s; // le' problém
+
 
 public class SoldItemTest {
 	  
