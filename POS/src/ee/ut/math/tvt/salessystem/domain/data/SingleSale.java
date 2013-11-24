@@ -1,10 +1,10 @@
 package ee.ut.math.tvt.salessystem.domain.data;
 
-import java.util.Set;
-
 import ee.ut.math.tvt.salessystem.ui.model.PurchaseInfoTableModel;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "SINGLESALE")
@@ -24,7 +24,7 @@ public class SingleSale implements DisplayableItem {
     private PurchaseInfoTableModel purchase;
     
     @OneToMany(mappedBy="saleId")
-    private Set<SoldItem> soldItems;
+    private List<SoldItem> soldItems;
 
     public SingleSale(long id, String currentDate, double totalPrice,
                       PurchaseInfoTableModel purchase) {
@@ -43,6 +43,9 @@ public class SingleSale implements DisplayableItem {
     public SingleSale(){
     	
     }
+
+
+
     public String getDate() {
         return date;
     }
@@ -52,11 +55,13 @@ public class SingleSale implements DisplayableItem {
     }
 
     public PurchaseInfoTableModel getPurchase() {
-        return new PurchaseInfoTableModel(soldItems);
+        return new PurchaseInfoTableModel((Set<SoldItem>) soldItems);
     }
 
     @Override
     public Long getId() {
         return id;
     }
+
+
 }

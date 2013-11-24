@@ -11,8 +11,7 @@ public class Intro {
     
 
     public static void main(String[] args) {
-    	//iljale
-    	System.out.println("Hello");
+
 
         final SalesDomainController domainController = new SalesDomainControllerImpl();
 

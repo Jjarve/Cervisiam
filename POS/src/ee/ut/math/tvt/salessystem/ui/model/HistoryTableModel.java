@@ -42,7 +42,7 @@ public class HistoryTableModel extends SalesSystemTableModel<SingleSale> {
     }
 
     @Override
-    protected Object getColumnValue(SingleSale sale, int columnIndex) {
+    public Object getColumnValue(SingleSale sale, int columnIndex) {
         switch (columnIndex) {
             case 0:
                 return sale.getId();

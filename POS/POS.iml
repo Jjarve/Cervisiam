@@ -18,8 +18,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="hibernate" level="project" />
+    <orderEntry type="library" exported="" name="hibernate" level="project" />
+    <orderEntry type="library" exported="" name="jgoodies-looks-2.5.3-javadoc" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>
 
