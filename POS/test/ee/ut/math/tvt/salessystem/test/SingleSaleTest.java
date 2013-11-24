@@ -15,22 +15,22 @@ public class SingleSaleTest {
 	}
 	
 	//TODO
-	testAddSoldItem(){
+	public void testAddSoldItem(){
 
 	}
 	
 	//TODO
-	testGetSumWithNoItems(){
+	public void testGetSumWithNoItems(){
 		
 	}
 	
 	//TODO
-	testGetSumWithOneItem(){
+	public void testGetSumWithOneItem(){
 		
 	}
 	
 	//TODO
-	testGetSumWithMultipleItems(){
+	public void testGetSumWithMultipleItems(){
 		
 	}	
 }

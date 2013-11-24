@@ -4,11 +4,16 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+import java.util.NoSuchElementException;
 
-private StockTableModel() STM;
-private StockItem stockItem;
+import ee.ut.math.tvt.salessystem.domain.data.StockItem;
+import ee.ut.math.tvt.salessystem.ui.model.StockTableModel;
+
+
 
 public class StockTableModelTest {
+	private StockTableModel STM;
+	private StockItem stockItem;
 	  
 	@Before
 	public void setUp() {
@@ -16,8 +21,7 @@ public class StockTableModelTest {
 	}
 	
 	//TODO
-	public void testValidateNameUniqueness() {
-		
+	public void testValidateNameUniqueness() {		
 	}
 	
 	//TODO
@@ -27,15 +31,15 @@ public class StockTableModelTest {
 	
 	@Test
 	public void testGetItemByIdWhenItemExists() {
-		stockItem = new StockItem(1,"Lauaviin","Alko 40%",4.95);
-		s2 = getItemById(1);
+		stockItem = new StockItem(1L,"Lauaviin","Alko 40%",4.95);
+		StockItem s2 = STM.getItemById(1);
 		assertEquals(s2, stockItem);
 		
 	}
 	
-	@Test(expected=NoSuchElementException.class)
+	@Test(expected= NoSuchElementException.class)
 	public void testGetItemByIdWhenThrowsException() {
-		getItemById(1);
+		STM.getItemById(1);
 	}
 
 }

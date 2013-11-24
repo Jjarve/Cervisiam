@@ -7,19 +7,23 @@ import org.junit.Test;
 
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
 
-private StockItem stockItem;
+
 
 public class StockItemTest {
+	private StockItem stockItem;
 	  
 	@Before
 	public void setUp() {
-		stockItem = new Stockitem(1,"Lauaviin","Alko 40%", 4.95, 1);
+		stockItem = new StockItem(1L,"Lauaviin","Alko 40%", 4.95, 1);
 	}
 
 	@Test
 	public void testClone() {
-		s2 = stockItem.clone();
-		assertEquals(s2, stockItem);
+		StockItem s2 = stockItem.clone();
+		assertEquals(s2.getId(), stockItem.getId());
+		assertEquals(s2.getName(), stockItem.getName());
+		assertEquals(s2.getDescription(), stockItem.getDescription());
+		assertEquals(s2.getQuantity(), stockItem.getQuantity());
 	}
 	
 	@Test
@@ -35,18 +39,18 @@ public class StockItemTest {
 	
 	@Test
 	public void testGetColumn2() {
-		assertEquals(stockItem.getColumn(2), stockItem.getDescription());
+		assertEquals(stockItem.getColumn(2), stockItem.getPrice());
 		
 	}
 	
 	@Test
 	public void testGetColumn3() {
-		assertEquals(stockItem.getColumn(3), stockItem.getPrice());		
+		assertEquals(stockItem.getColumn(3), stockItem.getQuantity());		
 	}
 	
 	@Test(expected=RuntimeException.class)
 	public void testGetColumnExc() {
-		stockItem.getColumn(4)
+		stockItem.getColumn(4);
 	}
 
 }
