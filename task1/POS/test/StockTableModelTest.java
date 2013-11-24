@@ -47,6 +47,11 @@ public class StockTableModelTest {
 
     }
 
+    @Test(expected = NoSuchElementException.class)
+    public void testGetItemByIdWhenThrowsException() {
+        stockTableModel.addItem(stockItem1);
+        stockTableModel.getItemById(666);
+    }
 
     @Test
     public void testGetItemByIdWhenItemExists() {
@@ -57,16 +62,10 @@ public class StockTableModelTest {
     }
 
 
-    @Test(expected = NoSuchElementException.class)
-    public void testGetItemByIdWhenThrowsException() {
-        stockTableModel.addItem(stockItem1);
-        stockTableModel.getItemById(666);
-    }
 
     @Test
     public void testHasEnoughInStock() {
         stockTableModel.addItem(stockItem1);
         assertTrue(stockTableModel.getItemById(125).getQuantity() >= stockItem1.getQuantity());
-
     }
 }
