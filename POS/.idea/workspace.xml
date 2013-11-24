@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.lck" afterPath="$PROJECT_DIR$/data/POSdb.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.log" afterPath="$PROJECT_DIR$/data/POSdb.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.properties" afterPath="$PROJECT_DIR$/data/POSdb.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="af3d8c79-6fa2-4dfb-9e23-109b7d82f517" name="New changelist" comment="New changelist" />
     <ignored path="POS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1385327669695" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1385327740070" ignored="false" />
     <file path="/Intro.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383566322489" ignored="false" />
     <file path="/IntroUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381752826973" ignored="false" />
     <file path="/build.xml" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1385311970597" ignored="false" />
@@ -138,7 +142,19 @@
     <favorites_list name="POS" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="HistoryTableModelTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/HistoryTableModelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="21" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5306604">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -166,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/HistoryTableModel.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/Team_of_4/Intro.java" />
         <option value="$PROJECT_DIR$/test/SoldItemTest.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/test/StockItemTest.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/domain/data/SingleSale.java" />
         <option value="$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/PurchaseInfoTableModel.java" />
@@ -174,6 +189,7 @@
         <option value="$PROJECT_DIR$/test/PurchaseInfoTableModelTest.java" />
         <option value="$PROJECT_DIR$/test/StockTableModelTest.java" />
         <option value="$PROJECT_DIR$/test/HistoryTableModelTest.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -546,7 +562,7 @@
       <recent name="ee.ut.math.tvt.salessystem.domain.data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PurchaseInfoTableModelTest">
+  <component name="RunManager" selected="JUnit.HistoryTableModelTest">
     <configuration default="false" name="StockTableModelTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="POS" />
@@ -790,11 +806,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PurchaseInfoTableModelTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StockTableModelTest.testValidateNameUniqueness" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StockTableModelTest.testGetItemByIdWhenThrowsException" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StockTableModelTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HistoryTableModelTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HistoryTableModelTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PurchaseInfoTableModelTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StockTableModelTest.testValidateNameUniqueness" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StockTableModelTest.testGetItemByIdWhenThrowsException" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StockTableModelTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -940,7 +956,11 @@
       <created>1385327678009</created>
       <updated>1385327678009</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="JUnit Test">
+      <created>1385327743037</created>
+      <updated>1385327743037</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -967,26 +987,26 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3241895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23601148" sideWeight="0.28678304" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.7107232" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.563591" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3241895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28553617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43640897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43640897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67206985" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.67581046" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23601148" sideWeight="0.563591" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2892768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1074,13 +1094,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/tabs/HistoryTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="5" selection-start="3023" selection-end="3023" vertical-scroll-proportion="0.028901733">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ee/ut/math/tvt/salessystem/ui/model/SalesSystemModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="218" selection-end="218" vertical-scroll-proportion="0.028901733">
@@ -1146,15 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/HistoryTableModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="27" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.75581396">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/StockItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.13565892">
@@ -1194,6 +1198,22 @@
     <entry file="file://$PROJECT_DIR$/test/PurchaseInfoTableModelTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="48" selection-start="547" selection-end="547" vertical-scroll-proportion="0.29069766">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="0" selection-start="4444" selection-end="4444" vertical-scroll-proportion="1.1678832">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HistoryTableModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5306604">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
