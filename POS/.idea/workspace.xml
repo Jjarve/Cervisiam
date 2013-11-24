@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d9d8a0c2-9fb3-436d-a623-de1493c0412c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.lck" afterPath="$PROJECT_DIR$/data/POSdb.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.log" afterPath="$PROJECT_DIR$/data/POSdb.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/POSdb.properties" afterPath="$PROJECT_DIR$/data/POSdb.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="af3d8c79-6fa2-4dfb-9e23-109b7d82f517" name="New changelist" comment="New changelist" />
     <ignored path="POS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1385327930327" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1385328214863" ignored="false" />
     <file path="/Intro.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1383566322489" ignored="false" />
     <file path="/IntroUI.java" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1381752826973" ignored="false" />
     <file path="/build.xml" changelist="d9d8a0c2-9fb3-436d-a623-de1493c0412c" time="1385311970597" ignored="false" />
@@ -963,7 +961,11 @@
       <created>1385327935689</created>
       <updated>1385327935689</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="JUnit Test">
+      <created>1385328219199</created>
+      <updated>1385328219199</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
