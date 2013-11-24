@@ -26,17 +26,17 @@ public class StockTab {
     private final SalesDomainController controller;
 
     private SalesSystemModel model;
-
+    private Logger logger;
     private JButton addItem;
 
     public StockTab(SalesSystemModel model, SalesDomainController controller) {
         this.model = model;
         this.controller = controller;
+        this.logger = Logger.getLogger(this.getClass());
     }
 
     // warehouse stock tab - consists of a menu and a table
     public Component draw() {
-    	refresh();
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
@@ -58,10 +58,11 @@ public class StockTab {
         return panel;
     }
 
-    private void refresh() {
+    public void refresh() {
 		model.getWarehouseTableModel().clear();
 		model.getWarehouseTableModel().populateWithData(controller.getAllStockItems());
 		model.getWarehouseTableModel().fireTableDataChanged();
+		logger.info("refreshing");
 		
 	}
 

@@ -74,6 +74,12 @@ public class PurchaseInfoTableModel extends SalesSystemTableModel<SoldItem> {
 		return buffer.toString();
 	}
 
+	@Override
+	public void clear() {
+		this.currentSale = new Sale();
+		super.clear();
+	}
+
 	public SoldItem getForStockItem(long stockItemId) {
 		for (SoldItem item : getTableRows()) {
 			if (item.getStockItem().getId().equals(stockItemId)) {
@@ -150,6 +156,11 @@ public class PurchaseInfoTableModel extends SalesSystemTableModel<SoldItem> {
 	@Override
 	public List<SoldItem> getTableRows() {
 		return currentSale.getSoldItems();
+	}
+	
+	@Override
+	public int getRowCount() {
+		return getTableRows().size();
 	}
 
 }

@@ -3,6 +3,8 @@ package ee.ut.math.tvt.salessystem.ui.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import ee.ut.math.tvt.salessystem.domain.data.Client;
 
 /**
@@ -13,9 +15,11 @@ public class ClientTableModel extends SalesSystemTableModel<Client> {
 
 	private List<Client> clients;
 	
+	Logger logger;
 	public ClientTableModel() {
 		super(new String[] { "Id", "First name", "Discount"});
 		this.clients = new ArrayList<Client>();
+		logger = Logger.getLogger(this.getClass());
 	}
 
 	@Override
@@ -52,5 +56,10 @@ public class ClientTableModel extends SalesSystemTableModel<Client> {
 	@Override
 	public List<Client> getTableRows() {
 		return clients;
+	}
+
+	@Override
+	public int getRowCount() {
+		return getTableRows().size();
 	}
 }

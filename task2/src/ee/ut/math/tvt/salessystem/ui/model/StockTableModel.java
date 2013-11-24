@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import org.apache.log4j.Category;
 import org.apache.log4j.Logger;
 
 import ee.ut.math.tvt.salessystem.domain.data.StockItem;
@@ -18,9 +19,12 @@ public class StockTableModel extends SalesSystemTableModel<StockItem> {
 	
 	List<StockItem> stockItems;
 
+	Logger logger;
+
 	public StockTableModel() {
 		super(new String[] {"Id", "Name", "Price", "Quantity"});
 		this.stockItems = new ArrayList<StockItem>();
+		logger = Logger.getLogger(this.getClass());
 	}
 
 	@Override
@@ -104,6 +108,11 @@ public class StockTableModel extends SalesSystemTableModel<StockItem> {
 	public List<StockItem> getTableRows() {
 		
 		return stockItems;
+	}
+
+	@Override
+	public int getRowCount() {
+		return getTableRows().size();
 	}
 
 }

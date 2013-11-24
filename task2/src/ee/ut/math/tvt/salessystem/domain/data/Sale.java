@@ -1,5 +1,6 @@
 package ee.ut.math.tvt.salessystem.domain.data;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
@@ -43,7 +44,12 @@ public class Sale implements DisplayableItem {
         this.sellingTime = new Date();
     }
 
-    public Client getClient() {
+    public Sale(Client selectedClient) {
+    	this.soldItems = new ArrayList<SoldItem>();
+		this.client = selectedClient;
+	}
+
+	public Client getClient() {
         return client;
     }
 

@@ -9,6 +9,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
+import org.apache.log4j.Logger;
+
 import ee.ut.math.tvt.salessystem.domain.controller.SalesDomainController;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
 
@@ -19,16 +21,20 @@ public class ClientTab {
     
     private SalesDomainController controller;
     
+    private Logger logger;
+    
     public ClientTab(SalesSystemModel model, SalesDomainController controller) {
         this.model = model;
         this.controller = controller;
+        this.logger = Logger.getLogger(this.getClass());
+        
     } 
     
     /**
      * The main entry-point method. Creates the tab.
      */
     public Component draw() {
-    	refresh();
+    	
         JPanel panel = new JPanel();
         
         GridBagConstraints gc = getGbConstraints();
@@ -40,10 +46,11 @@ public class ClientTab {
         return panel;
     }
     
-    private void refresh() {
+    public void refresh() {
 		model.getClientTableModel().clear();
 		model.getClientTableModel().populateWithData(controller.getAllClients());
 		model.getClientTableModel().fireTableDataChanged();
+		logger.info("refreshing");
 		
 	}
 

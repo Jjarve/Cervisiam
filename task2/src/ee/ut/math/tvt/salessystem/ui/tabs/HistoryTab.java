@@ -17,13 +17,16 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+import org.apache.log4j.Logger;
+
 
 /**
  * Encapsulates everything that has to do with the purchase tab (the tab
  * labelled "History" in the menu).
  */
 public class HistoryTab {
-
+	
+	 private Logger logger;
     private SalesSystemModel model;
     
     private SalesDomainController controller;
@@ -33,13 +36,13 @@ public class HistoryTab {
     public HistoryTab(SalesSystemModel model, SalesDomainController controller) {
         this.model = model;
         this.controller = controller;
+        this.logger = Logger.getLogger(this.getClass());
     }
 
     /**
      * The main entry-point method. Creates the tab.
      */
     public Component draw() {
-    	refresh();
         JPanel panel = new JPanel();
 
         GridBagConstraints gc = getGbConstraints();
@@ -51,10 +54,11 @@ public class HistoryTab {
 
         return panel;
     }
-    private void refresh() {
+    public void refresh() {
 		model.getPurchaseHistoryTableModel().clear();
 		model.getPurchaseHistoryTableModel().populateWithData(controller.getAllSales());
 		model.getPurchaseHistoryTableModel().fireTableDataChanged();
+		logger.info("refreshing");
 		
 	}
 

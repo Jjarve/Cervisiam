@@ -38,9 +38,9 @@ public abstract class SalesSystemTableModel<T extends DisplayableItem> extends
         return headers[columnIndex];
     }
 
-    public int getRowCount() {
-        return getRows().size();
-    }
+    //public int getRowCount() {
+    //    return getRows().size();
+    //}
 
     public Object getValueAt(final int rowIndex, final int columnIndex) {
         return getColumnValue(getRows().get(rowIndex), columnIndex);
