@@ -6,6 +6,7 @@ import ee.ut.math.tvt.salessystem.domain.exception.VerificationFailedException;
 import ee.ut.math.tvt.salessystem.ui.model.SalesSystemModel;
 import ee.ut.math.tvt.salessystem.ui.panels.PurchaseItemPanel;
 import ee.ut.math.tvt.salessystem.ui.windows.PayingWindow;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.GridBagConstraints;
@@ -13,12 +14,15 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+
+import javax.sound.midi.ControllerEventListener;
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -70,7 +74,6 @@ public class PurchaseTab {
 
         return panel;
     }
-
     // The purchase menu. Contains buttons "New purchase", "Submit", "Cancel".
     private Component getPurchaseMenuPane() {
         JPanel panel = new JPanel();

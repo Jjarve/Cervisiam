@@ -36,6 +36,7 @@ public class StockTab {
 
     // warehouse stock tab - consists of a menu and a table
     public Component draw() {
+    	refresh();
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
@@ -57,7 +58,14 @@ public class StockTab {
         return panel;
     }
 
-    // warehouse menu
+    private void refresh() {
+		model.getWarehouseTableModel().clear();
+		model.getWarehouseTableModel().populateWithData(controller.getAllStockItems());
+		model.getWarehouseTableModel().fireTableDataChanged();
+		
+	}
+
+	// warehouse menu
     private Component drawStockMenuPane() {
         JPanel panel = new JPanel();
 

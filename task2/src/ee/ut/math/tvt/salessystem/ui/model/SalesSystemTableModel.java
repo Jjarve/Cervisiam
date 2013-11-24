@@ -78,5 +78,4 @@ public abstract class SalesSystemTableModel<T extends DisplayableItem> extends
     public List<T> getRows() {
         return getTableRows();
     }
-    
 }
