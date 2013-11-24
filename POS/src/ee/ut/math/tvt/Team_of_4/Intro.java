@@ -8,8 +8,11 @@ import org.apache.log4j.Logger;
 public class Intro {
     private static final Logger log = Logger.getLogger(Intro.class);
     private static final String MODE = "console";
+    
 
     public static void main(String[] args) {
+    	//iljale
+    	System.out.println("Hello");
 
         final SalesDomainController domainController = new SalesDomainControllerImpl();
 
